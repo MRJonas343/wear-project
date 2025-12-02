@@ -74,14 +74,6 @@ object WearableConstants {
     const val KEY_MEDICATIONS_JSON = "medications_json"
 
     /**
-     * Key for medication ID in message payloads.
-     *
-     * When sending action messages via MessageClient, we include the medication ID
-     * so the phone knows which medication to update.
-     */
-    const val KEY_MEDICATION_ID = "medication_id"
-
-    /**
      * Key for timestamp in data synchronization.
      *
      * Including a timestamp ensures DataClient detects changes even if the medication
