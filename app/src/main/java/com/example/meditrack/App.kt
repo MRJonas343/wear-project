@@ -25,8 +25,6 @@ import com.example.shared.ColorConstants
 fun MediTrackApp() {
     var showAddDialog by remember { mutableStateOf(false) }
     var activeReminder by remember { mutableStateOf<Medication?>(null) }
-    // No need to collect state here anymore if HomeScreen does it
-    // val medications by MedicationRepository.medications.collectAsState()
 
     Scaffold(
         bottomBar = { BottomNavBar() },
@@ -44,7 +42,6 @@ fun MediTrackApp() {
     ) { padding ->
         HomeScreen(
             modifier = Modifier.padding(padding),
-            // Pass a lambda to set the active reminder
             onMedicationClick = { medication ->
                 activeReminder = medication
             }
