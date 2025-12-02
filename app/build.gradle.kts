@@ -63,4 +63,5 @@ dependencies {
     implementation(project(":shared"))
     implementation(libs.play.services.wearable)
     implementation(libs.androidx.compose.material.icons.extended.v168)
+    implementation(libs.kotlinx.coroutines.play.services) // For Task.await() extension
 }

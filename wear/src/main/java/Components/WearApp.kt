@@ -13,9 +13,10 @@ import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Scaffold
 import androidx.wear.compose.material.TimeText
 import com.example.shared.ColorConstants
+import com.example.wear.WearDataSyncService
 
 @Composable
-fun WearApp() {
+fun WearApp(syncService: WearDataSyncService? = null) {
     val medications by MedicationRepository.medications.collectAsState()
     var currentScreen by remember { mutableStateOf(WearScreen.HOME) }
     var activeMedication by remember { mutableStateOf<Medication?>(null) }
@@ -60,11 +61,16 @@ fun WearApp() {
                     onBack = { currentScreen = WearScreen.HOME }
                 )
                 WearScreen.REMINDER -> {
+                    val service = syncService // Explicitly capture
                     activeMedication?.let {
-                        WearReminderScreen(medication = it, onAction = {
-                            activeMedication = null
-                            currentScreen = WearScreen.HOME
-                        })
+                        WearReminderScreen(
+                            medication = it,
+                            syncService = service,
+                            onAction = {
+                                activeMedication = null
+                                currentScreen = WearScreen.HOME
+                            }
+                        )
                     } ?: run { currentScreen = WearScreen.HOME } // Fallback
                 }
             }

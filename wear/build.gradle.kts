@@ -60,4 +60,5 @@ dependencies {
     // Add this line for the full icon set (Check, Warning, etc.)
     implementation(libs.androidx.compose.material.icons.extended.v168)
     implementation(project(":shared"))
+    implementation(libs.kotlinx.coroutines.play.services) // For Task.await() extension
 }
