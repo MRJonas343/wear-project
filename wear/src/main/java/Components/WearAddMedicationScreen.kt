@@ -1,6 +1,5 @@
 package Components
 
-import Medication
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -27,6 +26,7 @@ import androidx.wear.compose.material.Icon
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import com.example.shared.ColorConstants
+import com.example.shared.Medication
 
 
 @Composable

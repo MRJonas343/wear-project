@@ -41,6 +41,7 @@ import androidx.compose.ui.unit.sp
 import androidx.compose.ui.window.Dialog
 import androidx.compose.ui.window.DialogProperties
 import com.example.shared.ColorConstants
+import com.example.shared.Medication
 
 @OptIn(ExperimentalLayoutApi::class)
 @Composable

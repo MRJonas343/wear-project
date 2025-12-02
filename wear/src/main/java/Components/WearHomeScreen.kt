@@ -1,6 +1,5 @@
 package Components
 
-import Medication
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -33,6 +32,8 @@ import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import com.example.shared.ColorConstants
+import com.example.shared.Medication
+import com.example.shared.MedicationStatus
 
 @Composable
 fun WearHomeScreen(

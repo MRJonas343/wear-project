@@ -1,6 +1,5 @@
 package Components
 
-import Medication
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -13,6 +12,8 @@ import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Scaffold
 import androidx.wear.compose.material.TimeText
 import com.example.shared.ColorConstants
+import com.example.shared.Medication
+import com.example.shared.MedicationRepository
 import com.example.wear.WearDataSyncService
 
 @Composable

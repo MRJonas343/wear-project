@@ -1,6 +1,5 @@
 package Components
 
-import Medication
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -32,6 +31,7 @@ import com.example.wear.MedicationAction
 import com.example.wear.WearDataSyncService
 import kotlinx.coroutines.launch
 import androidx.compose.runtime.rememberCoroutineScope
+import com.example.shared.Medication
 
 /**
  * Reminder screen for medication actions.

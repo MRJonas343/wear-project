@@ -3,7 +3,6 @@ package com.example.meditrack
 import AddMedicationDialog
 import BottomNavBar
 import HomeScreen
-import Medication
 import ReminderScreen
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.CircleShape
@@ -20,6 +19,9 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import com.example.shared.ColorConstants
+import com.example.shared.Medication
+import com.example.shared.MedicationRepository
+import com.example.shared.MedicationStatus
 
 @Composable
 fun MediTrackApp() {
